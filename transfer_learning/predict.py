@@ -46,5 +46,5 @@ if __name__ == '__main__':
     device = "cuda" if torch.cuda.is_available() else "cpu"
     label2id = {'cat': 0, 'dog': 1}
     id2label = {v: k for k, v in label2id.items()}
-    print(inference(best_model_path='model/best-model-transfer-learning.ckpt', image_path=image_path,
+    print(inference(best_model_path='checkpoint/best-model-transfer-learning.ckpt', image_path=image_path,
             device=device, label2id=label2id, id2label=id2label))
