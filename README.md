@@ -1,4 +1,21 @@
-# 🐱🐶 Cat and Dog Image Classification
+<h1 align="center">
+🐱🐶 Cat and Dog Image Classification
+</h1>
+
+<p align="center">
+<a href="https://www.python.org/">
+<img src="https://img.shields.io/badge/Python-3.10-blue">
+</a>
+<a href="https://lightning.ai/">
+<img src="https://img.shields.io/badge/PyTorch-Lightning-red">
+</a>
+<a href="https://huggingface.co/">
+<img src="https://img.shields.io/badge/HuggingFace-Transformers-yellow">
+</a>
+<a href="https://wandb.ai/">
+<img src="https://img.shields.io/badge/Weights&Biases-ExperimentTracking-purple">
+</a>
+</p>
 
 A deep learning project for binary image classification (cat vs dog) using ResNet-18 with transfer learning. The project includes training pipeline, evaluation metrics, and a web API for inference.
 
