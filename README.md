@@ -50,6 +50,8 @@ pip install -r requirements.txt
 **Dataset Distribution:** Number of images per class in each dataset split.
 ![Dataset Distribution](images/cats_and_dogs_distribution.jpg)
 
+Some sample images from the dataset are shown below, illustrating the visual characteristics of the Cat and Dog classes.
+![Dataset samples](images/sample_dataset.png)
 ## 🚀 Run Inference
 Run prediction on a single image:
 ```bash
