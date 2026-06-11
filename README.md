@@ -60,7 +60,7 @@ python transfer_learning/predict.py --image_path "path/to/image.jpg"
 
 ## 🌐 Run Web Application
 The FastAPI-based web application has been successfully deployed and is publicly accessible at:
-👉 **https://quan12012-cat-dog-classification.hf.space**
+👉 [Live Demo](https://quan12012-cat-dog-classification.hf.space)
 
 The application allows users to upload an image and returns the predicted class (Cat or Dog) along with the corresponding confidence score.
 
