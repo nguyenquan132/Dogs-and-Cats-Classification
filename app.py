@@ -14,7 +14,7 @@ label2id = {'cat': 0, 'dog': 1}
 id2label = {v: k for k, v in label2id.items()}
 
 model = ResNetFinetuner.load_from_checkpoint(
-    "model/best-model-transfer-learning.ckpt",
+    "checkpoint/best-model-transfer-learning.ckpt",
     id2label=id2label,
     label2id=label2id
 )
