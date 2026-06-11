@@ -1,4 +1,4 @@
-# 🐱🐶 Cat vs Dog Image Classification
+# 🐱🐶 Cat and Dog Image Classification
 
 A deep learning project for binary image classification (cat vs dog) using ResNet-18 with transfer learning. The project includes training pipeline, evaluation metrics, and a web API for inference.
 
