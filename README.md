@@ -59,16 +59,21 @@ python transfer_learning/predict.py --image_path "path/to/image.jpg"
 ```
 
 ## 🌐 Run Web Application
-Start the FastAPI server:
+The FastAPI-based web application has been successfully deployed and is publicly accessible at:
+👉 **https://your-deployed-url.onrender.com**
+
+The application allows users to upload an image and returns the predicted class (Cat or Dog) along with the corresponding confidence score.
+
+Once the server is running locally, it can also be started using:
 ```bash
 python -m uvicorn app:app --reload
 ```
-Once the server is running, open your browser and navigate to:
-```text
+Then access it via:
+```
 http://127.0.0.1:8000
 ```
 ## 🖥️ Web Interface
-The web interface enables users to upload an image and obtain the predicted class together with the confidence score.
+The web interface enables users to upload an image and obtain the predicted class together with the confidence score. The interface also provides a visual preview of the uploaded image to improve usability.
 ![Web UI](images/dog_test.png)
 
 
