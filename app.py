@@ -35,6 +35,5 @@ async def predict(file: UploadFile = File(...)):
                                   device=device, id2label=id2label)
 
     return {
-        "prediction": label,
-        "confidence": round(confidence * 100, 2)
+        "prediction": label
     }
