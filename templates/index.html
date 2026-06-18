@@ -122,9 +122,6 @@
 
             document.getElementById("prediction")
                 .innerText = result.prediction.toUpperCase();
-
-            document.getElementById("confidence")
-                .innerText = `Confidence: ${result.confidence}%`;
         } catch (error) {
 
             alert(error.message);
