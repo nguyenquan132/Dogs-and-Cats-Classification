@@ -74,7 +74,7 @@ Some sample images from the dataset are shown below, illustrating the visual cha
 ## 🚀 Run Inference
 Run prediction on a single image:
 ```bash
-python transfer_learning/predict.py --image_path "path/to/image.jpg"
+python -m transfer_learning.predict --image_path "path/to/image.jpg"
 ```
 
 ## 🌐 Web Application Deployment
