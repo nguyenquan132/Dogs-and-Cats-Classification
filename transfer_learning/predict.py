@@ -3,6 +3,7 @@ import torch
 import numpy as np
 import argparse
 from .utils import val_transforms, set_seed
+from .restnet18 import ResNetFinetuner
 
 def inference(model, image, device, id2label, seed=42):
     set_seed(seed=seed)
@@ -46,5 +47,12 @@ if __name__ == '__main__':
     device = "cuda" if torch.cuda.is_available() else "cpu"
     label2id = {'cat': 0, 'dog': 1}
     id2label = {v: k for k, v in label2id.items()}
-    print(inference(best_model_path='checkpoint/best-model-transfer-learning.ckpt', image_path=image_path,
-            device=device, label2id=label2id, id2label=id2label))
+
+    model = ResNetFinetuner.load_from_checkpoint(
+        "checkpoint/best-model-transfer-learning.ckpt",
+        id2label=id2label,
+        label2id=label2id
+    )
+
+    label, conf = inference(model=model, image=image_path, device=device, id2label=id2label)
+    print(f'Label: {label} | Confidence: {conf}')
